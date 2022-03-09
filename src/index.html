@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pikachu</title>
+</head>
+<body>
+    <div id="html">
+        <div class="skin">
+            <div class="eye left"></div>
+            <div class="eye right"></div>
+            <div class="face left"></div>
+            <div class="face right"></div>
+            <div class="nose"></div>
+            <div class="mouth">
+                <div class="up">
+                    <div class="lip left"></div>
+                    <div class="lip right"></div>
+                </div>
+                <div class="down">
+                    <div class="yuan1">
+                        <div class="yuan2"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <style id="style"></style>
+    <div id="css"></div>
+    <div id="buttons">
+        <button id="btnPause">暂停</button>
+        <button id="btnPlay">播放</button>
+        <button id="btnFast">快速</button>
+        <button id="btnMiddle">中速</button>
+        <button id="btnSlow">慢速</button>
+    </div>
+    <style>
+        * {
+          box-sizing: border-box;
+          margin: 0;
+          padding: 0;
+        }
+        *::before,
+        *::after {
+          box-sizing: border-box;
+        }        
+        #buttons{
+            position: fixed;
+            top: 0;
+            right: 0;
+            display: flex;
+            flex-direction: column;
+            margin-top: 10px;
+            margin-right: 10px;
+        }
+        #buttons>button{
+            margin-bottom: 10px;
+            padding: 4px 8px;
+        }
+        #css{
+            position:fixed; /*css文本框绝对定位*/
+            height: 45vh;
+            top: 0;
+            left: 0;
+            width: 100%;
+            border: 1px solid red;
+            overflow: scroll; /*防止溢出*/
+        }
+        #css::-webkit-scrollbar{
+            display:none; /*用户能滚*/
+        } 
+        #html{
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 55vh;
+        }
+    </style>
+    <script src="main.js"></script>
+</body>
+</html>
